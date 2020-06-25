@@ -5,6 +5,7 @@ const cors = require('cors')
 
 app.use(cors())
 app.use(express.json())
+app.use(express.static('build'))
 
 let notes = [
     {
@@ -31,9 +32,7 @@ let notes = [
     }
 ]
 
-app.get('/', (request , response)=>{
-    response.send('<h1>Hello World!</h1>')
-})
+
 
 
 app.get('/api/notes', (request,response)=>{
