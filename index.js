@@ -32,10 +32,6 @@ let notes = [
     }
 ]
 
-app.get('/',(request,response)=>{
-    response.send(index.html)
-})
-
 
 app.get('/',(request,response)=>{
     response.json(notes)
