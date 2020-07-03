@@ -33,7 +33,7 @@ let notes = [
 ]
 
 app.get('/',(request,response)=>{
-    send.(index.html)
+    response.send(index.html)
 })
 
 
